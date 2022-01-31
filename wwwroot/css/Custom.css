@@ -1,0 +1,35 @@
+#foto {
+    width: 200px;
+    margin: 2rem 0;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.seleccion-bienvenida {
+    margin: 5rem 0 10rem 0;
+    color: white;
+}
+
+    .seleccion-bienvenida h1 {
+        margin-bottom: 1rem;
+    }
+
+    .seleccion-bienvenida p {
+        font-family: sans-serif;
+        line-height: 1.5;
+        font-size: 1.25rem;
+    }
+
+#image-dotnet {
+    width: 500px;
+}
+
+.cabecera {
+    font-weight: bold;
+}
+
+.habilidades ul {
+    list-style: none;
+    padding-left: 0;
+}
+
