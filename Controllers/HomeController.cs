@@ -19,13 +19,17 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         var Proyectos = repositorioProyectos.ObtenerProyectos().Take(3).ToList();
-        HomeIndexViewModel HIVM = new HomeIndexViewModel()
+        HomeIndexViewModel HIVM = new()
         {
             Proyectos = Proyectos
         };
         return View(HIVM);
     }
-
+    public IActionResult _Proyectos()
+    {
+        var proyectos = repositorioProyectos.ObtenerProyectos();
+        return View(proyectos);
+    }
     public IActionResult Privacy()
     {
         return View();
