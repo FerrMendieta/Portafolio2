@@ -30,6 +30,19 @@ public class HomeController : Controller
         var proyectos = repositorioProyectos.ObtenerProyectos();
         return View(proyectos);
     }
+    public IActionResult Contacto()
+    {
+        return View();
+    }
+    [HttpPost]
+    public IActionResult Contacto(ContactoViewModel ContactoViewModel)
+    {
+        return RedirectToAction("Gracias");
+    }
+    public IActionResult Gracias()
+    {
+        return View();
+    }
     public IActionResult Privacy()
     {
         return View();
